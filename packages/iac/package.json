@@ -1,0 +1,26 @@
+{
+  "name": "@kensyuu-08/iac",
+  "version": "1.0.0",
+  "description": "AWS CDK Infrastructure for IoT sensor data demo",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "deploy": "cdk deploy",
+    "destroy": "cdk destroy",
+    "diff": "cdk diff",
+    "synth": "cdk synth"
+  },
+  "devDependencies": {
+    "aws-cdk": "2.1025.0",
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.4",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.211.0",
+    "constructs": "^10.4.2",
+    "source-map-support": "^0.5.21"
+  }
+}

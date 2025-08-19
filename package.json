@@ -1,0 +1,32 @@
+{
+  "name": "kensyuu-08",
+  "version": "1.0.0",
+  "description": "IoT sensor data visualization demo with AWS CDK and Athena",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r dev",
+    "test": "pnpm -r test",
+    "deploy": "pnpm --filter iac run deploy",
+    "generate-data": "pnpm --filter sensor-data-generator generate",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format .",
+    "format:fix": "biome format --write ."
+  },
+  "keywords": [
+    "iot",
+    "aws",
+    "athena",
+    "cdk",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.5",
+    "@biomejs/biome": "^2.0.6"
+  }
+}

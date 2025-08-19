@@ -1,0 +1,60 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.2.0/schema.json",
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space"
+  },
+  "files": {
+    "includes": [
+      "**",
+      "!**/node_modules",
+      "!**/cdk.out",
+      "!**/dist",
+      "!**/coverage",
+      "!**/.pnpm-store",
+      "!**/data"
+    ]
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "trailingCommas": "es5"
+    },
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "correctness": {
+        "noUnusedImports": {
+          "level": "error"
+        },
+        "noUnusedVariables": {
+          "level": "error"
+        }
+      },
+      "suspicious": {
+        "noExplicitAny": "error"
+      },
+      "complexity": {
+        "noUselessConstructor": "off"
+      },
+      "style": {
+        "noUselessElse": "off",
+        "noUnusedTemplateLiteral": "off",
+        "noNonNullAssertion": "off",
+        "noParameterAssign": "error",
+        "useAsConstAssertion": "error",
+        "useDefaultParameterLast": "error",
+        "useEnumInitializers": "error",
+        "useSelfClosingElements": "error",
+        "useSingleVarDeclarator": "error",
+        "useNumberNamespace": "error",
+        "noInferrableTypes": "error"
+      }
+    }
+  }
+}

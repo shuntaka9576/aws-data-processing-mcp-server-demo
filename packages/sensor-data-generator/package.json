@@ -1,0 +1,22 @@
+{
+  "name": "@kensyuu-08/sensor-data-generator",
+  "version": "1.0.0",
+  "description": "IoT sensor data generator and S3 uploader",
+  "type": "module",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "generate": "tsx src/generator.ts",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "date-fns": "^3.2.0"
+  }
+}
